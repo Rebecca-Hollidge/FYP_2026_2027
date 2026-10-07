@@ -1,0 +1,105 @@
+[gd_scene load_steps=9 format=3 uid="uid://lonh4x0rq2le"]
+
+[ext_resource type="Texture2D" uid="uid://co37vfu18t4vg" path="res://char.png" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://cpoye38n813ff" path="res://node_2d.gd" id="2_epypp"]
+
+[sub_resource type="Animation" id="Animation_q6r6c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_d21ai"]
+resource_name = "down_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_kdubu"]
+resource_name = "left_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_0hol4"]
+resource_name = "right_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_rj586"]
+resource_name = "up_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4d7sh"]
+_data = {
+&"RESET": SubResource("Animation_q6r6c"),
+&"down_animation": SubResource("Animation_d21ai"),
+&"left_animation": SubResource("Animation_kdubu"),
+&"right_animation": SubResource("Animation_0hol4"),
+&"up_animation": SubResource("Animation_rj586")
+}
+
+[node name="main-char" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(-97, -6)
+texture = ExtResource("1_0e48y")
+hframes = 4
+frame = 2
+script = ExtResource("2_epypp")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_4d7sh")
+}
