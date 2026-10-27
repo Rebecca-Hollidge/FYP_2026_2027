@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bjmi33viqttl5"]
+
+[ext_resource type="Texture2D" uid="uid://dh0j0naj23o76" path="res://Untitled_Artwork 1.png" id="1_bocpd"]
+[ext_resource type="Script" uid="uid://bqonk0adas3kb" path="res://bug_book.gd" id="1_x20w2"]
+[ext_resource type="Texture2D" uid="uid://dlna5nixdgsbg" path="res://Untitled_Artwork 7 (copy).png" id="2_x20w2"]
+[ext_resource type="Texture2D" uid="uid://dx0da7v1dnxc8" path="res://Untitled_Artwork 6 (copy).png" id="3_wyya5"]
+[ext_resource type="Texture2D" uid="uid://i61ifkwnhfhf" path="res://Untitled_Artwork 5.png" id="4_lqmta"]
+
+[node name="bug_book" type="Node2D" unique_id=1243801572]
+script = ExtResource("1_x20w2")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=522979355]
+offset_right = 1155.0
+offset_bottom = 662.0
+
+[node name="background" type="Sprite2D" parent="." unique_id=1822968441]
+position = Vector2(579, 325.99997)
+scale = Vector2(0.33295324, 0.27096772)
+texture = ExtResource("1_bocpd")
+
+[node name="book" type="Sprite2D" parent="." unique_id=1275117897]
+position = Vector2(534.5, 363.1875)
+scale = Vector2(0.2830673, 0.26386088)
+texture = ExtResource("2_x20w2")
+
+[node name="bug_book_back" type="TextureButton" parent="." unique_id=721695389]
+offset_left = 1000.0
+offset_top = -6.0
+offset_right = 1145.0
+offset_bottom = 126.0
+texture_normal = ExtResource("3_wyya5")
+texture_hover = ExtResource("4_lqmta")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="bug_book_back" to="." method="_on_bug_book_back_pressed"]

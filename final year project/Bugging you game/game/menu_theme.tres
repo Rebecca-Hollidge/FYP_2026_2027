@@ -1,0 +1,9 @@
+[gd_resource type="Theme" format=3 uid="uid://bn8dxbll6ne4l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wyb85"]
+bg_color = Color(0.77724516, 0.7121625, 1.1584439, 1)
+
+[resource]
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_wyb85")
+RichTextLabel/colors/selection_color = Color(0.101960786, 0.9137255, 1, 0.8)
+RichTextLabel/fonts/italics_font = null

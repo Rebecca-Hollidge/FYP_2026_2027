@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://c6n5sox7stp86"]
+
+[ext_resource type="Script" uid="uid://7fkb7bkb251m" path="res://main_game.gd" id="1_yx7mw"]
+[ext_resource type="Texture2D" uid="uid://ivd11wmwdjrb" path="res://ART/background-green.png" id="2_6bm6p"]
+[ext_resource type="Texture2D" uid="uid://btm2t3441id5m" path="res://char.png" id="2_ykeeq"]
+[ext_resource type="Script" uid="uid://csc40i7gewmb3" path="res://main_char.gd" id="4_6bm6p"]
+[ext_resource type="Texture2D" uid="uid://bkwyn2ya3x4pq" path="res://Untitled_Artwork 19.png" id="5_mf81u"]
+[ext_resource type="Texture2D" uid="uid://f5gdowmqabay" path="res://ART/Untitled_Artwork 5.png" id="6_02kkc"]
+[ext_resource type="Texture2D" uid="uid://c28s44d23q3fm" path="res://Untitled_Artwork 3.png" id="7_aomqu"]
+[ext_resource type="Texture2D" uid="uid://btxxvrybtvh24" path="res://Untitled_Artwork 4.png" id="8_krmtw"]
+[ext_resource type="Texture2D" uid="uid://i61ifkwnhfhf" path="res://Untitled_Artwork 5.png" id="9_jgkyn"]
+[ext_resource type="Texture2D" uid="uid://dx0da7v1dnxc8" path="res://Untitled_Artwork 6 (copy).png" id="10_qpaub"]
+
+[sub_resource type="Animation" id="Animation_ykeeq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("main_char:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_6bm6p"]
+resource_name = "down_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("main_char:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_dugkq"]
+resource_name = "left_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("main_char:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.56666666),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_2pltu"]
+resource_name = "right_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("main_char:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+
+[sub_resource type="Animation" id="Animation_f52ns"]
+resource_name = "up_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("main_char:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.6666667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_l5ukw"]
+_data = {
+&"RESET": SubResource("Animation_ykeeq"),
+&"down_animation": SubResource("Animation_6bm6p"),
+&"left_animation": SubResource("Animation_dugkq"),
+&"right_animation": SubResource("Animation_2pltu"),
+&"up_animation": SubResource("Animation_f52ns")
+}
+
+[node name="main_game" type="Node2D" unique_id=1529661574]
+script = ExtResource("1_yx7mw")
+
+[node name="background" type="Sprite2D" parent="." unique_id=1466871735]
+position = Vector2(575, 324.00003)
+scale = Vector2(0.3340935, 0.26451614)
+texture = ExtResource("2_6bm6p")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=107731941]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="main_char" type="Sprite2D" parent="." unique_id=1421477713]
+position = Vector2(384, 319)
+scale = Vector2(0.1435484, 0.13501675)
+texture = ExtResource("2_ykeeq")
+hframes = 4
+frame = 2
+script = ExtResource("4_6bm6p")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="main_char" unique_id=1649754748]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_l5ukw")
+speed_scale = -0.171
+
+[node name="options-menu-game" type="TextureButton" parent="." unique_id=1808464391]
+offset_left = 921.0
+offset_top = 5.0
+offset_right = 1074.0
+offset_bottom = 142.0
+texture_normal = ExtResource("5_mf81u")
+texture_hover = ExtResource("6_02kkc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="bug-bag" type="TextureButton" parent="." unique_id=1352959936]
+offset_left = 776.0
+offset_top = -20.0
+offset_right = 964.0
+offset_bottom = 175.0
+texture_normal = ExtResource("7_aomqu")
+texture_hover = ExtResource("8_krmtw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="bug-book" type="TextureButton" parent="." unique_id=1909382580]
+offset_left = 686.0
+offset_top = -5.0
+offset_right = 823.0
+offset_bottom = 126.0
+texture_normal = ExtResource("9_jgkyn")
+texture_hover = ExtResource("10_qpaub")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="options-menu-game" to="." method="_on_optionsmenugame_pressed"]
+[connection signal="pressed" from="bug-bag" to="." method="_on_bugbag_pressed"]
+[connection signal="pressed" from="bug-book" to="." method="_on_bugbook_pressed"]

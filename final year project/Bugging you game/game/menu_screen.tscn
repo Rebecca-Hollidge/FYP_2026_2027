@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://bhs04hrtnom4u"]
+
+[ext_resource type="Theme" uid="uid://bn8dxbll6ne4l" path="res://menu_theme.tres" id="1_iefc8"]
+[ext_resource type="Script" uid="uid://bb2yrffevx8ol" path="res://menu_screen.gd" id="2_gvolf"]
+[ext_resource type="Texture2D" uid="uid://d3urls1bgcav3" path="res://ART/menu-background.png" id="3_qjfvo"]
+[ext_resource type="Texture2D" uid="uid://cdn56coc2iqm7" path="res://Untitled_Artwork 12.png" id="4_68vtp"]
+[ext_resource type="Texture2D" uid="uid://bkr33asuxtf41" path="res://ART/Untitled_Artwork 4.png" id="4_lfpg5"]
+[ext_resource type="Texture2D" uid="uid://f5gdowmqabay" path="res://ART/Untitled_Artwork 5.png" id="5_68vtp"]
+[ext_resource type="Texture2D" uid="uid://chdp3ea00jyx" path="res://ART/Upinmirror.png" id="6_gvolf"]
+[ext_resource type="Texture2D" uid="uid://bia1yimysakyg" path="res://Untitled_Artwork 18.png" id="7_g50d1"]
+[ext_resource type="Texture2D" uid="uid://buevv44igkslt" path="res://Untitled_Artwork 17.png" id="8_gvolf"]
+[ext_resource type="Texture2D" uid="uid://dy3l0snbfy107" path="res://Untitled_Artwork 16.png" id="9_csdst"]
+
+[node name="menu_screen" type="Control" unique_id=1259987304]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_iefc8")
+script = ExtResource("2_gvolf")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1493807141]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bulletboard" type="Sprite2D" parent="PanelContainer" unique_id=179542465]
+position = Vector2(553, 366)
+scale = Vector2(0.5976563, 0.4266357)
+texture = ExtResource("3_qjfvo")
+
+[node name="noteboard" type="Sprite2D" parent="PanelContainer" unique_id=1164775734]
+position = Vector2(584.89844, 384)
+scale = Vector2(0.2582089, 0.3459677)
+texture = ExtResource("4_lfpg5")
+
+[node name="logo" type="Sprite2D" parent="PanelContainer" unique_id=627134767]
+position = Vector2(568.99994, 215.99998)
+scale = Vector2(0.0881262, 0.091072075)
+texture = ExtResource("4_68vtp")
+
+[node name="pin" type="Sprite2D" parent="PanelContainer" unique_id=1920389424]
+position = Vector2(906, 135)
+scale = Vector2(0.06445309, 0.053939823)
+texture = ExtResource("5_68vtp")
+
+[node name="pin2" type="Sprite2D" parent="PanelContainer" unique_id=8422431]
+position = Vector2(261, 138)
+rotation = -0.116937056
+scale = Vector2(0.05986125, 0.055296764)
+texture = ExtResource("6_gvolf")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1430155953]
+custom_minimum_size = Vector2(150, 150)
+propagate_maximum_size = false
+layout_mode = 0
+offset_left = 256.0
+offset_top = 326.0
+offset_right = 910.0
+offset_bottom = 505.0
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.16
+alignment = 1
+
+[node name="startbutton" type="TextureButton" parent="." unique_id=929036310]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 506.0
+offset_top = 325.0
+offset_right = 656.0
+offset_bottom = 475.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("7_g50d1")
+texture_pressed = ExtResource("7_g50d1")
+texture_hover = ExtResource("7_g50d1")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="optionsbutton" type="TextureButton" parent="." unique_id=1128636114]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 276.0
+offset_top = 326.0
+offset_right = 426.0
+offset_bottom = 476.0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture_normal = ExtResource("8_gvolf")
+texture_pressed = ExtResource("8_gvolf")
+texture_hover = ExtResource("8_gvolf")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="exitbutton" type="TextureButton" parent="." unique_id=1442704037]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_left = 739.0
+offset_top = 321.0
+offset_right = 889.0
+offset_bottom = 471.0
+size_flags_horizontal = 8
+size_flags_vertical = 4
+texture_normal = ExtResource("9_csdst")
+texture_pressed = ExtResource("9_csdst")
+texture_hover = ExtResource("9_csdst")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="startbutton" to="." method="_on_startbutton_pressed"]
+[connection signal="pressed" from="optionsbutton" to="." method="_on_optionsbutton_pressed"]
+[connection signal="pressed" from="exitbutton" to="." method="_on_exitbutton_pressed"]

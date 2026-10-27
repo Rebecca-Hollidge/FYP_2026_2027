@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://kap4ecmufe6v"]
+
+[ext_resource type="Texture2D" uid="uid://d26w1cfjjh64h" path="res://ART/settings-pinboard.png" id="1_5owwi"]
+[ext_resource type="Script" uid="uid://d2uq2myrfikan" path="res://game_music_options.gd" id="1_cqq0v"]
+[ext_resource type="Texture2D" uid="uid://bkwyn2ya3x4pq" path="res://Untitled_Artwork 19.png" id="2_fxyda"]
+[ext_resource type="Texture2D" uid="uid://cyy6lkbb873wf" path="res://Untitled_Artwork 20.png" id="3_1f1l3"]
+[ext_resource type="Texture2D" uid="uid://wvix2hf3tiag" path="res://Untitled_Artwork 24.png" id="4_cqq0v"]
+[ext_resource type="Texture2D" uid="uid://f5gdowmqabay" path="res://ART/Untitled_Artwork 5.png" id="6_1f1l3"]
+
+[node name="game music options" type="Control" unique_id=1249801784]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cqq0v")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1935165529]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 1158.0
+offset_bottom = 653.0
+
+[node name="bulletboard" type="Sprite2D" parent="PanelContainer" unique_id=504715266]
+position = Vector2(558, 368)
+scale = Vector2(0.43066406, 0.38232422)
+texture = ExtResource("1_5owwi")
+
+[node name="backing" type="Sprite2D" parent="PanelContainer" unique_id=747449729]
+position = Vector2(582.00006, 426)
+scale = Vector2(0.17061003, 0.20564516)
+texture = ExtResource("3_1f1l3")
+
+[node name="backing2" type="Sprite2D" parent="PanelContainer" unique_id=1430490933]
+
+[node name="sticker" type="Sprite2D" parent="PanelContainer" unique_id=1568735285]
+position = Vector2(803.00006, 278)
+scale = Vector2(0.054077145, 0.048461925)
+texture = ExtResource("4_cqq0v")
+
+[node name="sticker2" type="Sprite2D" parent="PanelContainer" unique_id=384454119]
+position = Vector2(352.00006, 507)
+scale = Vector2(0.054077145, 0.048461925)
+texture = ExtResource("4_cqq0v")
+
+[node name="music_slider" type="HSlider" parent="." unique_id=487384478]
+layout_mode = 0
+offset_left = 487.0
+offset_top = 331.0
+offset_right = 748.0
+offset_bottom = 347.0
+max_value = 1.0
+step = 0.0
+
+[node name="soundeffects_slider" type="HSlider" parent="." unique_id=194130498]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 372.0
+offset_right = 751.0
+offset_bottom = 388.0
+max_value = 1.0
+step = 0.0
+
+[node name="Label" type="Label" parent="." unique_id=681927690]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 326.0
+offset_right = 1159.0
+offset_bottom = 349.0
+text = "music"
+
+[node name="Label2" type="Label" parent="." unique_id=919930347]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 367.0
+offset_right = 517.0
+offset_bottom = 664.0
+text = "sound effects"
+
+[node name="icon-menu-button" type="TextureButton" parent="." unique_id=791094045]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 96.0
+offset_right = 654.0
+offset_bottom = 266.0
+texture_normal = ExtResource("2_fxyda")
+texture_hover = ExtResource("6_1f1l3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="icon-menu-button" to="." method="_on_iconmenubutton_pressed"]
+[connection signal="pressed" from="icon-menu-button" to="." method="_on_texture_button_pressed"]
