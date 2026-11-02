@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh0j0naj23o76"
-path="res://.godot/imported/Untitled_Artwork 1.png-1575d73aa4b6e14754fe66b99840a9af.ctex"
+uid="uid://c83mi152sk8mt"
+path="res://.godot/imported/leaf-purple.png-91cf3f10d000050ee49685acefdd6fb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Untitled_Artwork 1.png"
-dest_files=["res://.godot/imported/Untitled_Artwork 1.png-1575d73aa4b6e14754fe66b99840a9af.ctex"]
+source_file="res://leaf-purple.png"
+dest_files=["res://.godot/imported/leaf-purple.png-91cf3f10d000050ee49685acefdd6fb2.ctex"]
 
 [params]
 

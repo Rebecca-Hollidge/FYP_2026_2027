@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://yv0q3o6c2k3g"]
 
 [ext_resource type="Script" uid="uid://mlnmuqmotuan" path="res://menu_game.gd" id="1_uu7lm"]
-[ext_resource type="Texture2D" uid="uid://d26w1cfjjh64h" path="res://ART/settings-pinboard.png" id="1_whm0o"]
-[ext_resource type="Texture2D" uid="uid://bkwyn2ya3x4pq" path="res://Untitled_Artwork 19.png" id="2_uu7lm"]
-[ext_resource type="Texture2D" uid="uid://cyy6lkbb873wf" path="res://Untitled_Artwork 20.png" id="3_aiw16"]
-[ext_resource type="Texture2D" uid="uid://wvix2hf3tiag" path="res://Untitled_Artwork 24.png" id="4_5i625"]
-[ext_resource type="Texture2D" uid="uid://c5k6kidgplvou" path="res://Untitled_Artwork 22.png" id="5_14p42"]
-[ext_resource type="Texture2D" uid="uid://buylb4rcp728f" path="res://Untitled_Artwork 21.png" id="6_5pnjr"]
-[ext_resource type="Texture2D" uid="uid://buevv44igkslt" path="res://Untitled_Artwork 17.png" id="7_1j0as"]
-[ext_resource type="Texture2D" uid="uid://dy3l0snbfy107" path="res://Untitled_Artwork 16.png" id="8_20m0x"]
-[ext_resource type="Texture2D" uid="uid://c40anrp2e5chh" path="res://MAIN-MENU-BUTTON.png" id="10_5i625"]
-[ext_resource type="Texture2D" uid="uid://bjadhsosvnvn4" path="res://save-button.png" id="11_14p42"]
+[ext_resource type="Texture2D" uid="uid://uit3nii3vapi" path="res://ART/settings-pinboard.png" id="1_whm0o"]
+[ext_resource type="Texture2D" uid="uid://1yco6y4rkq5m" path="res://logo-background.png" id="3_5i625"]
+[ext_resource type="Texture2D" uid="uid://c83mi152sk8mt" path="res://leaf-purple.png" id="4_14p42"]
+[ext_resource type="Texture2D" uid="uid://bvd2nbjwsju8w" path="res://tape.png" id="5_5pnjr"]
+[ext_resource type="Texture2D" uid="uid://ccixeifpq3a2t" path="res://blue-arrow.png" id="6_1j0as"]
+[ext_resource type="Texture2D" uid="uid://bo0o0cuotnj6p" path="res://pink-arrow.png" id="7_20m0x"]
+[ext_resource type="Texture2D" uid="uid://bfmnrp02csca2" path="res://options-button.png" id="8_bficj"]
+[ext_resource type="Texture2D" uid="uid://dw63neviubcyx" path="res://exit-button.png" id="9_1apdn"]
+[ext_resource type="Texture2D" uid="uid://d21we0s8g0n6n" path="res://MAIN-MENU-BUTTON.png" id="10_5i625"]
+[ext_resource type="Texture2D" uid="uid://b8dbcku43oyi" path="res://save-button.png" id="11_14p42"]
 
 [node name="menu-game" type="Control" unique_id=235482379]
 layout_mode = 3
@@ -36,24 +36,22 @@ texture = ExtResource("1_whm0o")
 [node name="icon" type="Sprite2D" parent="PanelContainer" unique_id=1356796558]
 position = Vector2(564, 190)
 scale = Vector2(0.08276367, 0.082458496)
-texture = ExtResource("2_uu7lm")
+texture = ExtResource("3_5i625")
 
 [node name="backing" type="Sprite2D" parent="PanelContainer" unique_id=1980168885]
-position = Vector2(575, 422)
-scale = Vector2(0.20590438, 0.2157258)
-texture = ExtResource("3_aiw16")
-
-[node name="backing2" type="Sprite2D" parent="PanelContainer" unique_id=1438022640]
+position = Vector2(575, 433.75)
+scale = Vector2(0.20590438, 0.20625)
+texture = ExtResource("4_14p42")
 
 [node name="sticker" type="Sprite2D" parent="PanelContainer" unique_id=357021885]
 position = Vector2(848.00006, 259)
 scale = Vector2(0.054077145, 0.048461925)
-texture = ExtResource("4_5i625")
+texture = ExtResource("5_5pnjr")
 
 [node name="sticker2" type="Sprite2D" parent="PanelContainer" unique_id=1748292365]
 position = Vector2(300, 508)
 scale = Vector2(0.054077145, 0.048461925)
-texture = ExtResource("4_5i625")
+texture = ExtResource("5_5pnjr")
 
 [node name="back_menu" type="TextureButton" parent="." unique_id=1929635024]
 layout_mode = 0
@@ -61,10 +59,8 @@ offset_left = 236.0
 offset_top = 97.0
 offset_right = 375.0
 offset_bottom = 188.0
-texture_normal = ExtResource("5_14p42")
-texture_pressed = ExtResource("6_5pnjr")
-texture_hover = ExtResource("6_5pnjr")
-texture_disabled = ExtResource("5_14p42")
+texture_normal = ExtResource("6_1j0as")
+texture_hover = ExtResource("7_20m0x")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -76,9 +72,7 @@ offset_right = 555.0
 offset_bottom = 440.0
 size_flags_horizontal = 0
 size_flags_vertical = 4
-texture_normal = ExtResource("7_1j0as")
-texture_pressed = ExtResource("7_1j0as")
-texture_hover = ExtResource("7_1j0as")
+texture_normal = ExtResource("8_bficj")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -90,9 +84,7 @@ offset_right = 823.0
 offset_bottom = 440.0
 size_flags_horizontal = 8
 size_flags_vertical = 4
-texture_normal = ExtResource("8_20m0x")
-texture_pressed = ExtResource("8_20m0x")
-texture_hover = ExtResource("8_20m0x")
+texture_normal = ExtResource("9_1apdn")
 ignore_texture_size = true
 stretch_mode = 0
 

@@ -22,4 +22,4 @@ func _on_bugbag_pressed() -> void:
 
 
 func _on_bugbook_pressed() -> void:
-	s
+	get_tree().change_scene_to_file("res://bug_book.tscn")

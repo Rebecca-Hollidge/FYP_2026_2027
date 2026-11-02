@@ -2,14 +2,14 @@
 
 [ext_resource type="Theme" uid="uid://bn8dxbll6ne4l" path="res://menu_theme.tres" id="1_iefc8"]
 [ext_resource type="Script" uid="uid://bb2yrffevx8ol" path="res://menu_screen.gd" id="2_gvolf"]
-[ext_resource type="Texture2D" uid="uid://d3urls1bgcav3" path="res://ART/menu-background.png" id="3_qjfvo"]
-[ext_resource type="Texture2D" uid="uid://cdn56coc2iqm7" path="res://Untitled_Artwork 12.png" id="4_68vtp"]
-[ext_resource type="Texture2D" uid="uid://bkr33asuxtf41" path="res://ART/Untitled_Artwork 4.png" id="4_lfpg5"]
-[ext_resource type="Texture2D" uid="uid://f5gdowmqabay" path="res://ART/Untitled_Artwork 5.png" id="5_68vtp"]
-[ext_resource type="Texture2D" uid="uid://chdp3ea00jyx" path="res://ART/Upinmirror.png" id="6_gvolf"]
-[ext_resource type="Texture2D" uid="uid://bia1yimysakyg" path="res://Untitled_Artwork 18.png" id="7_g50d1"]
-[ext_resource type="Texture2D" uid="uid://buevv44igkslt" path="res://Untitled_Artwork 17.png" id="8_gvolf"]
-[ext_resource type="Texture2D" uid="uid://dy3l0snbfy107" path="res://Untitled_Artwork 16.png" id="9_csdst"]
+[ext_resource type="Texture2D" uid="uid://ceqpcsavo4pdi" path="res://ART/menu-background.png" id="3_qjfvo"]
+[ext_resource type="Texture2D" uid="uid://csq55e771uyhv" path="res://ART/leaf-blue-backing.png" id="4_68vtp"]
+[ext_resource type="Texture2D" uid="uid://1yco6y4rkq5m" path="res://logo-background.png" id="5_gvolf"]
+[ext_resource type="Texture2D" uid="uid://bw0b6x7snd0g3" path="res://pin.png" id="6_csdst"]
+[ext_resource type="Texture2D" uid="uid://6wv44c4noo6b" path="res://ART/Upinmirror.png" id="6_gvolf"]
+[ext_resource type="Texture2D" uid="uid://dkabvahg6dasi" path="res://start-button.png" id="8_x55ar"]
+[ext_resource type="Texture2D" uid="uid://bfmnrp02csca2" path="res://options-button.png" id="9_wdxbj"]
+[ext_resource type="Texture2D" uid="uid://dw63neviubcyx" path="res://exit-button.png" id="10_4oumy"]
 
 [node name="menu_screen" type="Control" unique_id=1259987304]
 layout_mode = 3
@@ -35,22 +35,22 @@ scale = Vector2(0.5976563, 0.4266357)
 texture = ExtResource("3_qjfvo")
 
 [node name="noteboard" type="Sprite2D" parent="PanelContainer" unique_id=1164775734]
-position = Vector2(584.89844, 384)
-scale = Vector2(0.2582089, 0.3459677)
-texture = ExtResource("4_lfpg5")
-
-[node name="logo" type="Sprite2D" parent="PanelContainer" unique_id=627134767]
-position = Vector2(568.99994, 215.99998)
-scale = Vector2(0.0881262, 0.091072075)
+position = Vector2(581.00006, 389.00003)
+scale = Vector2(0.2948881, 0.33593515)
 texture = ExtResource("4_68vtp")
 
+[node name="logo" type="Sprite2D" parent="PanelContainer" unique_id=627134767]
+position = Vector2(558, 232.00002)
+scale = Vector2(0.09102186, 0.08369456)
+texture = ExtResource("5_gvolf")
+
 [node name="pin" type="Sprite2D" parent="PanelContainer" unique_id=1920389424]
-position = Vector2(906, 135)
-scale = Vector2(0.06445309, 0.053939823)
-texture = ExtResource("5_68vtp")
+position = Vector2(931, 152)
+scale = Vector2(0.058593757, 0.045711514)
+texture = ExtResource("6_csdst")
 
 [node name="pin2" type="Sprite2D" parent="PanelContainer" unique_id=8422431]
-position = Vector2(261, 138)
+position = Vector2(250, 145)
 rotation = -0.116937056
 scale = Vector2(0.05986125, 0.055296764)
 texture = ExtResource("6_gvolf")
@@ -59,10 +59,10 @@ texture = ExtResource("6_gvolf")
 custom_minimum_size = Vector2(150, 150)
 propagate_maximum_size = false
 layout_mode = 0
-offset_left = 256.0
-offset_top = 326.0
-offset_right = 910.0
-offset_bottom = 505.0
+offset_left = 235.0
+offset_top = 359.0
+offset_right = 889.0
+offset_bottom = 538.0
 size_flags_vertical = 4
 size_flags_stretch_ratio = 0.16
 alignment = 1
@@ -70,45 +70,39 @@ alignment = 1
 [node name="startbutton" type="TextureButton" parent="." unique_id=929036310]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
-offset_left = 506.0
-offset_top = 325.0
-offset_right = 656.0
-offset_bottom = 475.0
+offset_left = 491.0
+offset_top = 334.0
+offset_right = 641.0
+offset_bottom = 484.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture_normal = ExtResource("7_g50d1")
-texture_pressed = ExtResource("7_g50d1")
-texture_hover = ExtResource("7_g50d1")
+texture_normal = ExtResource("8_x55ar")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="optionsbutton" type="TextureButton" parent="." unique_id=1128636114]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
-offset_left = 276.0
-offset_top = 326.0
-offset_right = 426.0
-offset_bottom = 476.0
+offset_left = 233.0
+offset_top = 331.0
+offset_right = 383.0
+offset_bottom = 481.0
 size_flags_horizontal = 0
 size_flags_vertical = 4
-texture_normal = ExtResource("8_gvolf")
-texture_pressed = ExtResource("8_gvolf")
-texture_hover = ExtResource("8_gvolf")
+texture_normal = ExtResource("9_wdxbj")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="exitbutton" type="TextureButton" parent="." unique_id=1442704037]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
-offset_left = 739.0
-offset_top = 321.0
-offset_right = 889.0
-offset_bottom = 471.0
+offset_left = 758.0
+offset_top = 334.0
+offset_right = 908.0
+offset_bottom = 484.0
 size_flags_horizontal = 8
 size_flags_vertical = 4
-texture_normal = ExtResource("9_csdst")
-texture_pressed = ExtResource("9_csdst")
-texture_hover = ExtResource("9_csdst")
+texture_normal = ExtResource("10_4oumy")
 ignore_texture_size = true
 stretch_mode = 0
 

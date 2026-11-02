@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://rf3ro70tjxrb"]
 
 [ext_resource type="Script" uid="uid://cv4dks1uve0rl" path="res://bug_bag.gd" id="1_3lpgi"]
-[ext_resource type="Texture2D" uid="uid://cthaapjjvcj8q" path="res://Untitled_Artwork 8 (copy).png" id="1_g3wbe"]
-[ext_resource type="Texture2D" uid="uid://bqgw7at1tj2xs" path="res://Untitled_Artwork.png" id="2_3lpgi"]
-[ext_resource type="Texture2D" uid="uid://btxxvrybtvh24" path="res://Untitled_Artwork 4.png" id="3_chrpg"]
-[ext_resource type="Texture2D" uid="uid://dx6xgrhsv0vx2" path="res://Untitled_Artwork 12 (copy).png" id="4_6tjgn"]
-[ext_resource type="Texture2D" uid="uid://cc15vl42w2fv5" path="res://Untitled_Artwork 11 (copy).png" id="5_udxh7"]
-[ext_resource type="Texture2D" uid="uid://m0wap080co0v" path="res://Untitled_Artwork 10 (copy).png" id="6_rbkv4"]
-[ext_resource type="Texture2D" uid="uid://6760exvu86hv" path="res://Untitled_Artwork 13.png" id="7_dip3q"]
-[ext_resource type="Texture2D" uid="uid://cjp2jc6jpth1c" path="res://Untitled_Artwork 14.png" id="8_bw8mf"]
-[ext_resource type="Texture2D" uid="uid://c28s44d23q3fm" path="res://Untitled_Artwork 3.png" id="10_g3wbe"]
+[ext_resource type="Texture2D" uid="uid://b2xu3ipcdixr8" path="res://sorbet-background.png" id="2_g3wbe"]
+[ext_resource type="Texture2D" uid="uid://c47o1fiyw31xe" path="res://bag-lining.png" id="3_3lpgi"]
+[ext_resource type="Texture2D" uid="uid://bu5fxkesggsn7" path="res://jar-yellow.png" id="4_chrpg"]
+[ext_resource type="Texture2D" uid="uid://5458bh8mf3jq" path="res://jar-orange.png" id="5_6tjgn"]
+[ext_resource type="Texture2D" uid="uid://c4xle4kdn7t0c" path="res://jar-red.png" id="6_udxh7"]
+[ext_resource type="Texture2D" uid="uid://dixyejjl78qpq" path="res://jar-blue.png" id="7_rbkv4"]
+[ext_resource type="Texture2D" uid="uid://bxer4x6hff2x3" path="res://jar-green.png" id="8_dip3q"]
+[ext_resource type="Texture2D" uid="uid://yy6182emm3gh" path="res://bag-open.png" id="9_bw8mf"]
+[ext_resource type="Texture2D" uid="uid://bb73mwf1hh6vu" path="res://bag-close.png" id="10_31gd8"]
 
 [node name="bug_bag" type="Node2D" unique_id=836975964]
 script = ExtResource("1_3lpgi")
@@ -21,47 +21,47 @@ offset_bottom = 652.0
 [node name="background" type="Sprite2D" parent="PanelContainer" unique_id=967071707]
 position = Vector2(578.5, 325.00003)
 scale = Vector2(0.33437854, 0.2669355)
-texture = ExtResource("1_g3wbe")
+texture = ExtResource("2_g3wbe")
 
 [node name="bag-contain" type="Sprite2D" parent="PanelContainer" unique_id=2018677498]
 position = Vector2(597, 326.00003)
 scale = Vector2(0.32985318, 0.26058465)
-texture = ExtResource("2_3lpgi")
+texture = ExtResource("3_3lpgi")
 
 [node name="jar-yellow" type="Sprite2D" parent="PanelContainer" unique_id=111302884]
 position = Vector2(910, 421)
 scale = Vector2(0.18969728, 0.18652348)
-texture = ExtResource("4_6tjgn")
+texture = ExtResource("4_chrpg")
 
 [node name="jar-oragnge" type="Sprite2D" parent="PanelContainer" unique_id=1095167846]
 position = Vector2(173.59372, 426.125)
 scale = Vector2(0.17617798, 0.16906738)
-texture = ExtResource("5_udxh7")
+texture = ExtResource("5_6tjgn")
 
 [node name="jar-red" type="Sprite2D" parent="PanelContainer" unique_id=1911944047]
 position = Vector2(709.99994, 246)
 scale = Vector2(0.1468811, 0.16125488)
-texture = ExtResource("6_rbkv4")
+texture = ExtResource("6_udxh7")
 
 [node name="jar-purple" type="Sprite2D" parent="PanelContainer" unique_id=1506868891]
 position = Vector2(345.00003, 161)
 scale = Vector2(0.19355772, 0.19488524)
-texture = ExtResource("7_dip3q")
+texture = ExtResource("7_rbkv4")
 
 [node name="jar-green" type="Sprite2D" parent="PanelContainer" unique_id=693021518]
 position = Vector2(529.99994, 433.99997)
 scale = Vector2(0.1812515, 0.1711731)
-texture = ExtResource("8_bw8mf")
+texture = ExtResource("8_dip3q")
 
 [node name="bag_button" type="TextureButton" parent="." unique_id=989865273]
 offset_left = 754.0
 offset_top = -22.0
 offset_right = 1181.0
 offset_bottom = 341.0
-texture_normal = ExtResource("3_chrpg")
-texture_hover = ExtResource("10_g3wbe")
+texture_normal = ExtResource("9_bw8mf")
+texture_hover = ExtResource("10_31gd8")
 ignore_texture_size = true
 stretch_mode = 0
 
-[connection signal="pressed" from="bag_button" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="bag_button" to="." method="_on_bag_button_pressed"]
+[connection signal="pressed" from="bag_button" to="." method="_on_texture_button_pressed"]

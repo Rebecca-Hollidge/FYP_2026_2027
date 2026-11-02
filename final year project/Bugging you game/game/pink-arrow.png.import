@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btxxvrybtvh24"
-path="res://.godot/imported/Untitled_Artwork 4.png-42fc817c4b18e93e7f1cba96116265ea.ctex"
+uid="uid://bo0o0cuotnj6p"
+path="res://.godot/imported/pink-arrow.png-2ac2404fcc319b4653c912a4bed13217.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Untitled_Artwork 4.png"
-dest_files=["res://.godot/imported/Untitled_Artwork 4.png-42fc817c4b18e93e7f1cba96116265ea.ctex"]
+source_file="res://pink-arrow.png"
+dest_files=["res://.godot/imported/pink-arrow.png-2ac2404fcc319b4653c912a4bed13217.ctex"]
 
 [params]
 

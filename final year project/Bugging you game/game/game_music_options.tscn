@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://kap4ecmufe6v"]
 
-[ext_resource type="Texture2D" uid="uid://d26w1cfjjh64h" path="res://ART/settings-pinboard.png" id="1_5owwi"]
+[ext_resource type="Texture2D" uid="uid://uit3nii3vapi" path="res://ART/settings-pinboard.png" id="1_5owwi"]
 [ext_resource type="Script" uid="uid://d2uq2myrfikan" path="res://game_music_options.gd" id="1_cqq0v"]
-[ext_resource type="Texture2D" uid="uid://bkwyn2ya3x4pq" path="res://Untitled_Artwork 19.png" id="2_fxyda"]
-[ext_resource type="Texture2D" uid="uid://cyy6lkbb873wf" path="res://Untitled_Artwork 20.png" id="3_1f1l3"]
-[ext_resource type="Texture2D" uid="uid://wvix2hf3tiag" path="res://Untitled_Artwork 24.png" id="4_cqq0v"]
-[ext_resource type="Texture2D" uid="uid://f5gdowmqabay" path="res://ART/Untitled_Artwork 5.png" id="6_1f1l3"]
+[ext_resource type="Texture2D" uid="uid://csq55e771uyhv" path="res://ART/leaf-blue-backing.png" id="3_1f1l3"]
+[ext_resource type="Texture2D" uid="uid://bvd2nbjwsju8w" path="res://tape.png" id="4_cqq0v"]
+[ext_resource type="Texture2D" uid="uid://bhf27yaibpqko" path="res://settings-pin.png" id="5_ull5d"]
+[ext_resource type="Texture2D" uid="uid://dmfo0vs1tdla1" path="res://files-icon.png" id="6_qghlm"]
 
 [node name="game music options" type="Control" unique_id=1249801784]
 layout_mode = 3
@@ -24,7 +24,7 @@ offset_right = 1158.0
 offset_bottom = 653.0
 
 [node name="bulletboard" type="Sprite2D" parent="PanelContainer" unique_id=504715266]
-position = Vector2(558, 368)
+position = Vector2(569, 366)
 scale = Vector2(0.43066406, 0.38232422)
 texture = ExtResource("1_5owwi")
 
@@ -32,8 +32,6 @@ texture = ExtResource("1_5owwi")
 position = Vector2(582.00006, 426)
 scale = Vector2(0.17061003, 0.20564516)
 texture = ExtResource("3_1f1l3")
-
-[node name="backing2" type="Sprite2D" parent="PanelContainer" unique_id=1430490933]
 
 [node name="sticker" type="Sprite2D" parent="PanelContainer" unique_id=1568735285]
 position = Vector2(803.00006, 278)
@@ -85,8 +83,8 @@ offset_left = 472.0
 offset_top = 96.0
 offset_right = 654.0
 offset_bottom = 266.0
-texture_normal = ExtResource("2_fxyda")
-texture_hover = ExtResource("6_1f1l3")
+texture_normal = ExtResource("5_ull5d")
+texture_hover = ExtResource("6_qghlm")
 ignore_texture_size = true
 stretch_mode = 0
 

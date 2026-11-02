@@ -1,18 +1,19 @@
 [gd_scene format=3 uid="uid://bs7q3ops31ekl"]
 
 [ext_resource type="Script" uid="uid://5fh7ogw512u3" path="res://bug_capture_screen.gd" id="1_bind5"]
-[ext_resource type="Texture2D" uid="uid://ivd11wmwdjrb" path="res://ART/background-green.png" id="1_ut5kv"]
-[ext_resource type="Texture2D" uid="uid://boyb048wgdwxg" path="res://fight-screen.png" id="3_rigu0"]
-[ext_resource type="Texture2D" uid="uid://bkr33asuxtf41" path="res://ART/Untitled_Artwork 4.png" id="4_dnygo"]
-[ext_resource type="Texture2D" uid="uid://bbrh2dfro3gvc" path="res://card-flower.png" id="5_nti6g"]
-[ext_resource type="Texture2D" uid="uid://cvm2bohwvuui1" path="res://card-bug.png" id="6_7710i"]
-[ext_resource type="Texture2D" uid="uid://dmghk6vx3thgo" path="res://card-leaf.png" id="7_inwjm"]
-[ext_resource type="Texture2D" uid="uid://dtqeui0bk0q5e" path="res://card-grass.png" id="8_0c34k"]
-[ext_resource type="Texture2D" uid="uid://c3gidoua4qd5a" path="res://card-strawberry.png" id="9_53qap"]
-[ext_resource type="Texture2D" uid="uid://bj76uw7yobw2e" path="res://snail-bar.png" id="10_dnygo"]
-[ext_resource type="Texture2D" uid="uid://i61ifkwnhfhf" path="res://Untitled_Artwork 5.png" id="10_upj1i"]
-[ext_resource type="Texture2D" uid="uid://dh6g6sjpssqfi" path="res://timer-outside.png" id="11_nti6g"]
-[ext_resource type="Texture2D" uid="uid://dx0da7v1dnxc8" path="res://Untitled_Artwork 6 (copy).png" id="11_uvpxx"]
+[ext_resource type="Texture2D" uid="uid://cmmd6us40n00w" path="res://ART/background-green.png" id="1_ut5kv"]
+[ext_resource type="Texture2D" uid="uid://txqgrrmndlnn" path="res://fight-screen.png" id="3_rigu0"]
+[ext_resource type="Texture2D" uid="uid://c83mi152sk8mt" path="res://leaf-purple.png" id="4_nti6g"]
+[ext_resource type="Texture2D" uid="uid://qywp5m4ddg1c" path="res://card-flower.png" id="5_nti6g"]
+[ext_resource type="Texture2D" uid="uid://dnmdhboodv8pd" path="res://card-bug.png" id="6_7710i"]
+[ext_resource type="Texture2D" uid="uid://d3v2bbfwhmy68" path="res://card-leaf.png" id="7_inwjm"]
+[ext_resource type="Texture2D" uid="uid://cb5g8sghpwwi0" path="res://card-grass.png" id="8_0c34k"]
+[ext_resource type="Texture2D" uid="uid://2iq3j7a0w5q6" path="res://card-strawberry.png" id="9_53qap"]
+[ext_resource type="Texture2D" uid="uid://drnyinfi5s6cx" path="res://speech-bubble.png" id="10_7710i"]
+[ext_resource type="Texture2D" uid="uid://53pp4tq2lsao" path="res://snail-bar.png" id="10_dnygo"]
+[ext_resource type="Texture2D" uid="uid://b3fdjyfvey8jt" path="res://Untitled_Artwork 5.png" id="10_upj1i"]
+[ext_resource type="Texture2D" uid="uid://yrv106i1v8fq" path="res://timer-outside.png" id="11_nti6g"]
+[ext_resource type="Texture2D" uid="uid://cj3gai2y174p2" path="res://open-book.png" id="14_inwjm"]
 
 [node name="bug_capture_screen" type="Node2D" unique_id=1123487972]
 script = ExtResource("1_bind5")
@@ -32,9 +33,9 @@ scale = Vector2(0.35119727, 0.26081148)
 texture = ExtResource("3_rigu0")
 
 [node name="card-holder" type="Sprite2D" parent="PanelContainer" unique_id=747254006]
-position = Vector2(402.59378, 552.28125)
-scale = Vector2(0.22999214, 0.1736139)
-texture = ExtResource("4_dnygo")
+position = Vector2(381.00003, 558)
+scale = Vector2(0.24407159, 0.1905809)
+texture = ExtResource("4_nti6g")
 
 [node name="card-exsample-1" type="Sprite2D" parent="PanelContainer" unique_id=276901626]
 position = Vector2(252, 476)
@@ -62,9 +63,9 @@ scale = Vector2(0.08068666, 0.07193172)
 texture = ExtResource("9_53qap")
 
 [node name="text-bubble" type="Sprite2D" parent="PanelContainer" unique_id=1455130077]
-visible = false
-position = Vector2(612, 560)
-scale = Vector2(0.08068666, 0.07193172)
+position = Vector2(930.99994, 163)
+scale = Vector2(0.107278794, 0.082716145)
+texture = ExtResource("10_7710i")
 
 [node name="snail-trail" type="Sprite2D" parent="PanelContainer" unique_id=1759716008]
 position = Vector2(918, 535)
@@ -82,7 +83,7 @@ offset_top = 9.0
 offset_right = 216.0
 offset_bottom = 150.0
 texture_normal = ExtResource("10_upj1i")
-texture_hover = ExtResource("11_uvpxx")
+texture_hover = ExtResource("14_inwjm")
 ignore_texture_size = true
 stretch_mode = 0
 

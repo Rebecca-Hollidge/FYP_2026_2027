@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3vxpki8wkfmp"
-path="res://.godot/imported/Untitled_Artwork 6.png-948e2f30c8bf73ca3ae3bcc54452b9c8.ctex"
+uid="uid://yy6182emm3gh"
+path="res://.godot/imported/bag-open.png-7e3ce91e2f324990bbe9611f54e0294b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Untitled_Artwork 6.png"
-dest_files=["res://.godot/imported/Untitled_Artwork 6.png-948e2f30c8bf73ca3ae3bcc54452b9c8.ctex"]
+source_file="res://bag-open.png"
+dest_files=["res://.godot/imported/bag-open.png-7e3ce91e2f324990bbe9611f54e0294b.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brpuqej1tmqgg"
-path="res://.godot/imported/Untitled_Artwork 6.png-4f04bf0ca772683639f10da0e872cd44.ctex"
+uid="uid://cs8jtks7d5ud0"
+path="res://.godot/imported/bag-opne2.png-d421f811405f471ebb6369d8d77261ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ART/Untitled_Artwork 6.png"
-dest_files=["res://.godot/imported/Untitled_Artwork 6.png-4f04bf0ca772683639f10da0e872cd44.ctex"]
+source_file="res://bag-opne2.png"
+dest_files=["res://.godot/imported/bag-opne2.png-d421f811405f471ebb6369d8d77261ec.ctex"]
 
 [params]
 
